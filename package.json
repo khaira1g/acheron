@@ -9,7 +9,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "prepare": "npx tsc",
+    "prepare": "npx node_modules/typescript/bin/tsc",
     "start": "npm run build && node dist/cli.js",
     "dev": "tsx src/cli.tsx",
     "prepublishOnly": "npm run build"
